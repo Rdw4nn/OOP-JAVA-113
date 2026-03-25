@@ -288,10 +288,45 @@ class Siswa extends Orang {
 ```java
 enum Keterangan { HADIR, IZIN, SAKIT, ALFA }
 ```
+
+---
+ 
+## Keunikan yang Membedakan
+ 
+### 1. Validasi NIS Berbasis Panjang Digit
+Validator tidak hanya mengecek apakah input berupa angka, tapi juga memvalidasi panjangnya **5 sampai 10 digit** yang sesuai format NIS nyata di sekolah-sekolah Indonesia.
+ 
+```java
+public static boolean cekNis(String n) {
+    return n != null && n.matches("[0-9]{5,10}");
+}
+```
+ 
+### 2. Validasi Nama Mendukung Gelar
+Regex validasi nama mendukung karakter titik dan koma, sehingga nama seperti `Drs. Kevin` atau `S.Pd., M.M.` tetap diterima.
+ 
+```java
+public static boolean cekNama(String n) {
+    return n != null && n.matches("[A-Za-z\\s.,'-]+") && n.length() >= 2;
+}
+```
+ 
+### 3. Deteksi NIS Duplikat dalam Satu Sesi
+Menggunakan `HashSet<Integer>` untuk melacak NIS yang sudah diinput. Jika NIS yang sama dimasukkan dua kali, sistem langsung menolak dan menampilkan pesan spesifik, mencegah data siswa ganda dalam satu sesi absensi.
+ 
+```java
+if (nisYangSudahAda.contains(nis)) {
+    System.out.println("NIS " + nis + " sudah terdaftar di sesi ini.");
+}
+```
+ 
+### 4. Export CSV Berformat Tabel ASCII
+Output CSV tidak hanya berupa baris data mentah, tapi diformat sebagai **tabel ASCII** dengan garis pembatas dan alignment kolom yang rapi bisa langsung dibaca tanpa perlu membuka di spreadsheet.
+ 
+### 5. Pesan Error yang Kontekstual
+Setiap error message menyebutkan alasan spesifik dan panduan perbaikan, bukan sekadar "input tidak valid". Termasuk mencetak `e.getMessage()` saat IOException agar pengguna tahu penyebab gagalnya ekspor file.
  
 ---
-
-
 
 
 
