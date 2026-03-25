@@ -16,4 +16,4 @@ Sistem ini mensimulasikan proses absensi manual yang biasa dilakukan guru di kel
  
 ##  Class Diagram
 
-![Output]https://github.com/Rdw4nn/test/blob/main/kebutuhan/ClssDiagram.png
+![Output]:https://github.com/Rdw4nn/test/blob/main/kebutuhan/ClssDiagram.png
