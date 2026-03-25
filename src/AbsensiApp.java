@@ -19,7 +19,7 @@ enum Keterangan {
     HADIR, IZIN, SAKIT, ALFA
 }
 
-// guru yang ngajar di kelas — satu guru per sesi absensi
+// guru yang ngajar di kelas, satu guru per sesi absensi
 class Guru extends Orang {
     private String mapel;
 
@@ -34,7 +34,7 @@ class Guru extends Orang {
     public String getRole() { return "Guru"; }
 }
 
-// data siswa per hari — NIS harus unik dalam satu sesi
+// data siswa per hari
 class Siswa extends Orang {
     private int nis;
     private Keterangan status;
@@ -53,7 +53,7 @@ class Siswa extends Orang {
 }
 
 class Validator {
-    // nama boleh pakai titik/koma buat gelar, misal "Drs. Budi"
+    // nama boleh pakai titik/koma buat gelar, misal "Ir. Soekarno"
     public static boolean cekNama(String n) {
         return n != null && n.matches("[A-Za-z\\s.,'-]+") && n.length() >= 2;
     }
