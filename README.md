@@ -236,7 +236,7 @@ Output Terminal :
 
 Output CSV :
 
-![Output2](kebutuhan/https://github.com/Rdw4nn/test/blob/main/kebutuhan/Output2.png)
+![Output2](https://github.com/Rdw4nn/test/blob/main/kebutuhan/Output2.png)
 
 
 
