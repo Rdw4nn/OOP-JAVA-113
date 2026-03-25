@@ -232,10 +232,10 @@ public class AbsensiApp {
 ## Screenshot Output
 
 Output Terminal :
-![Output1](Output1.png)
+![Output1](kebutuhanMarkdown/Output1.png)
 
 Output CSV :
-![Output2](Output2.png)
+![Output2](kebutuhanMarkdown/Output2.png)
 
 ---
 
