@@ -231,7 +231,11 @@ public class AbsensiApp {
 
 ## Screenshot Output
 
+Output Terminal :
+![Output1](https://github.com/Rdw4nn/test/blob/main/kebutuhan/Output1.png)
 
+Output CSV :
+![Output2](https://github.com/Rdw4nn/test/blob/main/kebutuhan/Output2.png)
 
 
 
