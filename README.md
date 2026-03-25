@@ -1,18 +1,9 @@
-## Getting Started
+# Sistem Rekap Absensi Kelas — Java OOP
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+## Deskripsi Kasus
+Sistem ini mensimulasikan proses absensi manual yang biasa dilakukan guru di kelas, namun diotomatisasi melalui program Java. Setiap sesi absensi mencatat:
+⋅⋅⋅⋅* Satu guru beserta mata pelajaran yang diajarkan
+⋅⋅⋅⋅* Banyak siswa dengan NIS unik dan status kehadiran: HADIR, IZIN, SAKIT, atau ALFA
+⋅⋅⋅⋅* Rekap akhir berupa rangkuman jumlah per status dan opsi ekspor ke CSV
 
-## Folder Structure
-
-The workspace contains two folders by default, where:
-
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+## Class Diagram
