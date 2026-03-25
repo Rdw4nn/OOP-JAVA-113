@@ -237,6 +237,61 @@ Output Terminal :
 Output CSV :
 ![Output2](https://github.com/Rdw4nn/test/blob/main/kebutuhan/Output2.png)
 
+---
+
+## Prinsip OOP yang Diterapkan
+ 
+### 1. Abstraksi (Abstraction)
+Class `Orang` bersifat `abstract` — tidak bisa diinstansiasi langsung, hanya menyediakan kerangka dasar berupa atribut `id` dan `nama`, serta method abstrak `getRole()`. Ini memodelkan konsep "orang" secara umum tanpa terikat ke peran spesifik.
+ 
+```java
+abstract class Orang {
+    public abstract String getRole();
+}
+```
+ 
+### 2. Pewarisan (Inheritance)
+`Guru` dan `Siswa` mewarisi class `Orang`, sehingga tidak perlu mendefinisikan ulang atribut `id` dan `nama`. Setiap subclass hanya menambahkan atribut yang relevan dengan perannya masing-masing — `mapel` untuk guru, `nis` dan `status` untuk siswa.
+ 
+```java
+class Guru extends Orang { ... }
+class Siswa extends Orang { ... }
+```
+ 
+### 3. Polimorfisme (Polymorphism)
+Method `getRole()` di-override di setiap subclass untuk mengembalikan nilai yang berbeda sesuai peran. Kalau nanti ada peran baru (misal `StafTU`), cukup tambah subclass baru tanpa ubah logika yang sudah ada.
+ 
+```java
+// Guru
+public String getRole() { return "Guru"; }
+ 
+// Siswa
+public String getRole() { return "Siswa"; }
+```
+ 
+### 4. Enkapsulasi (Encapsulation)
+Semua atribut di setiap class bersifat `private` atau `protected`, hanya bisa diakses lewat method getter. Ini mencegah perubahan data secara langsung dari luar class dan menjaga integritas data.
+ 
+```java
+class Siswa extends Orang {
+    private int nis;
+    private Keterangan status;
+ 
+    public int getNis() { return nis; }
+    public Keterangan getStatus() { return status; }
+}
+```
+ 
+### 5. Enum sebagai Type Safety
+`Keterangan` didefinisikan sebagai `enum` — bukan `String` biasa — sehingga status kehadiran terbatas hanya pada nilai yang valid. Input selain `HADIR`, `IZIN`, `SAKIT`, `ALFA` langsung ditolak oleh `Keterangan.valueOf()` dan memunculkan `IllegalArgumentException`.
+ 
+```java
+enum Keterangan { HADIR, IZIN, SAKIT, ALFA }
+```
+ 
+---
+
+
 
 
 
