@@ -1,4 +1,4 @@
-#  Sistem Rekap Absensi Kelas — Java OOP
+#  Sistem Rekap Absensi Kelas | Java OOP
  
 Aplikasi berbasis Java untuk mencatat dan merekap kehadiran siswa per sesi pelajaran. Guru memasukkan data diri dan mata pelajaran, lalu menginput daftar siswa beserta status kehadiran masing-masing. Hasil rekap ditampilkan di konsol dan dapat diekspor ke file CSV berformat tabel.
  
