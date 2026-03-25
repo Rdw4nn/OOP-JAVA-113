@@ -1,6 +1,6 @@
 #  Sistem Rekap Absensi Kelas | Java OOP
  
-Nama : Muhammad Ridwan
+Nama : Muhammad Ridwan | 
 NRP : 5027251113
 
 Aplikasi berbasis Java untuk mencatat dan merekap kehadiran siswa per sesi pelajaran. Guru memasukkan data diri dan mata pelajaran, lalu menginput daftar siswa beserta status kehadiran masing-masing. Hasil rekap ditampilkan di konsol dan dapat diekspor ke file CSV berformat tabel.
