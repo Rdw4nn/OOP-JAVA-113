@@ -19,7 +19,7 @@ Sistem ini mensimulasikan proses absensi manual yang biasa dilakukan guru di kel
  
 ##  Class Diagram
 
-![Output](kebutuhanMarkdown/ClssDiagram.png)
+![Output](kebutuhanMarkdown/AbsensiApp.png)
 
 ---
  
