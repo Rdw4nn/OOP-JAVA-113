@@ -285,7 +285,7 @@ class Siswa extends Orang {
 }
 ```
  
-### 5. Enum sebagai Type Safety
+### 5. Enum 
 `Keterangan` didefinisikan sebagai `enum`, bukan `String` biasa, sehingga status kehadiran terbatas hanya pada nilai yang valid. Input selain `HADIR`, `IZIN`, `SAKIT`, `ALFA` langsung ditolak oleh `Keterangan.valueOf()` dan memunculkan `IllegalArgumentException`.
  
 ```java
